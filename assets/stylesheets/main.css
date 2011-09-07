@@ -79,6 +79,11 @@ body {
   clear: both;
 }
 
+.row_indent {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
 .col_txt > * {
   padding-left: 10px;
   /*vertical rithm and gutter*/
@@ -223,8 +228,6 @@ body {
   text-align: center;
 }
 
-/*	Typography presets
-	------------------	*/
 /*	Default Layout: 992px. 
 		Leftover space for scrollbars @1024px: 32px.
 -------------------------------------------------------------------------------*/
