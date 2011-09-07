@@ -249,6 +249,10 @@ body {
   .m_mosaic_highlights .s2of3 {
     width: 100%;
   }
+
+  .m-product-index li.s1of3 {
+    width: 50%;
+  }
 }
 /*	Mobile Layout: 320px.
 		Inherits styles from: Default Layout.
