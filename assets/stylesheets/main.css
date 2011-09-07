@@ -187,15 +187,15 @@ body {
   padding: 20px;
 }
 
-.pls {
+.pls, .m-product-index .featured, .m_product_mini_show {
   padding-left: 10px;
 }
 
-.plm, .m_product_mini_show {
+.plm {
   padding-left: 20px;
 }
 
-.prs {
+.prs, .m-product-index .featured, .m_product_mini_show {
   padding-right: 10px;
 }
 
@@ -211,20 +211,16 @@ body {
   padding-top: 20px;
 }
 
-.pbs {
+.pbs, .m-product-index .featured {
   padding-bottom: 10px;
 }
 
-.pbm {
+.pbm, .m_product_mini_show {
   padding-bottom: 20px;
 }
 
 .m-product-index li {
   text-align: center;
-}
-
-.m_product_mini_show {
-  padding-bottom: 20px;
 }
 
 /*	Typography presets
@@ -249,10 +245,6 @@ body {
   .m_mosaic_highlights .s2of3 {
     width: 100%;
   }
-
-  .m-product-index li.s1of3 {
-    width: 50%;
-  }
 }
 /*	Mobile Layout: 320px.
 		Inherits styles from: Default Layout.
@@ -264,10 +256,6 @@ body {
 
   .m_mosaic_highlights .s2of3 {
     width: 100%;
-  }
-
-  .m-product-index li.s1of3 {
-    width: 50%;
   }
 }
 /*	 Wide Mobile Layout: 480px.
