@@ -1,0 +1,241 @@
+/*
+  Mixins are slightly modified from Benjamin Doherty's first implementations: http://gist.github.com/377912
+  rgba-background mixin can now be passed an option $dir variable
+*/
+/**
+ * Micro clearfix hack
+ * @by Nicolas Gallagher @necolas
+ * @link http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+  display: block;
+}
+
+a img {
+  border: 0;
+}
+
+body {
+  font-size: x-small;
+}
+
+/* ============== */
+/* = RESPONSIVE = */
+/* ============== */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Selection colours (easy to forget) */
+::selection {
+  background: #ffff9e;
+}
+
+::-moz-selection {
+  background: #ffff9e;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+body {
+  -webkit-tap-highlight-color: #ffff9e;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 990px;
+  width: 80%;
+}
+
+/* ======== */
+/* = GRID = */
+/* ======== */
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.row {
+  display: block;
+  clear: both;
+}
+
+.col_txt > * {
+  padding-left: 10px;
+  /*vertical rithm and gutter*/
+  padding-right: 10px;
+}
+
+.col {
+  background: rgba(0, 0, 0, 0.4);
+  float: left;
+  display: inline;
+}
+
+.s1of1 {
+  width: 100%;
+}
+
+.s1of2 {
+  width: 50%;
+}
+
+.s1of3 {
+  width: 33.33333%;
+}
+
+.s2of3 {
+  width: 66.66666%;
+}
+
+.s1of4 {
+  width: 25%;
+}
+
+.s3of4 {
+  width: 75%;
+}
+
+.s1of5 {
+  width: 20%;
+}
+
+.s2of5 {
+  width: 40%;
+}
+
+.s3of5 {
+  width: 60%;
+}
+
+.s4of5 {
+  width: 80%;
+}
+
+.s1of6 {
+  width: 16.66666%;
+}
+
+.s1of7 {
+  width: 14.285714%;
+}
+
+/* ============== */
+/* = STRUCTURES = */
+/* ============== */
+.item {
+  zoom: 1;
+  /* needed if .item is a <li> for example */
+}
+
+.item_media {
+  float: left;
+}
+
+.item_media img {
+  display: block;
+}
+
+.item_body {
+  display: table;
+  zoom: 1;
+}
+
+/*	Typography presets
+	------------------	*/
+/*	Default Layout: 992px. 
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------*/
+.wrapper {
+  padding: 72px 48px 84px;
+  -webkit-text-size-adjust: 100%;
+  /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+
+/*	Tablet Layout: 768px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .wrapper {
+    padding: 48px 28px 60px;
+  }
+
+  .m_mosaic_highlights .s2of3 {
+    width: 100%;
+  }
+}
+/*	Mobile Layout: 320px.
+		Inherits styles from: Default Layout.
+---------------------------------------------*/
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    padding: 48px 34px 60px;
+  }
+
+  .m_mosaic_highlights .s2of3 {
+    width: 100%;
+  }
+}
+/*	 Wide Mobile Layout: 480px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .wrapper {
+    padding: 36px 22px 48px;
+  }
+}
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------*/
+.fondo_rojo, .btn {
+  border-left-radius: 20px;
+  -moz-border-radius-left: 20px;
+  -webkit-border-left-radius: 20px;
+  background: url('../images/rgbapng/ff00004d.png?1315318458');
+  background: rgba(255, 0, 0, 0.3);
+  color: red;
+}
+
+.clearfix:before, .row:before, .clearfix:after, .row:after {
+  content: "";
+  display: block;
+  overflow: hidden;
+}
+.clearfix:after, .row:after {
+  clear: both;
+}
+.clearfix, .row {
+  zoom: 1;
+}
+
+.icon {
+  padding-left: 25px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+}
+
+.btn {
+  border: 1px solid red;
+}
+
+   
