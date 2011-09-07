@@ -86,7 +86,6 @@ body {
 }
 
 .col {
-  background: rgba(0, 0, 0, 0.4);
   float: left;
   display: inline;
 }
@@ -160,6 +159,74 @@ body {
   zoom: 1;
 }
 
+.phs {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.phm {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.pvs {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.pvm {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pas {
+  padding: 10px;
+}
+
+.pam {
+  padding: 20px;
+}
+
+.pls {
+  padding-left: 10px;
+}
+
+.plm, .m_product_mini_show {
+  padding-left: 20px;
+}
+
+.prs {
+  padding-right: 10px;
+}
+
+.prm {
+  padding-right: 20px;
+}
+
+.pts {
+  padding-top: 10px;
+}
+
+.ptm {
+  padding-top: 20px;
+}
+
+.pbs {
+  padding-bottom: 10px;
+}
+
+.pbm {
+  padding-bottom: 20px;
+}
+
+.m-product-index li {
+  text-align: center;
+}
+
+.m_product_mini_show {
+  padding-bottom: 20px;
+}
+
 /*	Typography presets
 	------------------	*/
 /*	Default Layout: 992px. 
@@ -193,6 +260,10 @@ body {
 
   .m_mosaic_highlights .s2of3 {
     width: 100%;
+  }
+
+  .m-product-index li.s1of3 {
+    width: 50%;
   }
 }
 /*	 Wide Mobile Layout: 480px.
